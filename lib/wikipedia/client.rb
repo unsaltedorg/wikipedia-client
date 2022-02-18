@@ -43,10 +43,12 @@ module Wikipedia
         action: 'query',
         prop: %w[info revisions links extlinks images categories coordinates templates extracts pageimages langlinks],
         rvprop: 'content',
+        rvslots: 'main',
         inprop: 'url',
         pithumbsize: 200,
         explaintext: '',
         lllimit: 500,
+        pllimit: 500,
         titles: title
       }.merge( options ) )
     end
